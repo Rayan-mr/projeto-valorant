@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import AgentesCards from './Components/AgentesCards/AgentesCards'
 
-// Varre a pasta assets usando a raiz '/src/' fixa, evitando confusão de pastas relativas
 const imagensAgentes = import.meta.glob('/src/assets/*.png', { eager: true });
 
 function App() {
@@ -76,7 +75,6 @@ function App() {
       <section id="center">
         {
           agentesFiltrados.map((agente, index) => {
-            // Busca usando o padrão exato da linha 6
             const chaveImagem = `/src/assets/${agente.arquivo}`;
             const imagemResolvida = imagensAgentes[chaveImagem]?.default || '';
 
