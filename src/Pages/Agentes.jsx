@@ -35,7 +35,7 @@ function Agentes() {
   const imagemResolvida = imagensAgentes[chaveImagem]?.default || '';
 
   return (
-    <div>
+    <div className="container-da-pagina">
        <Link to={caminhoVoltar} className="botao-voltar">
         ← Voltar para a lista
       </Link>
