@@ -209,3 +209,26 @@ body {
 h1, h2 {
   color: #bfc7d5
 }
+
+.botao-voltar {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  background-color: gray ;  /* #ff4655;  Vermelho Valorant */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color, transform 0.4s ease;
+  text-decoration: none;
+}
+.botao-voltar:hover {
+  background-color: #b3323c;
+  transform: scale(1.1);
+}
+.botao-voltar:active{
+  transform: scale(0.95);
+}
