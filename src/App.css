@@ -214,22 +214,20 @@ h1, h2 {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  box-sizing: border-box
+  box-sizing: border-box;
+  align-items: center;
 }
 
 .topo-pagina {
   display: flex;
   justify-content: flex-start;
-  padding-top: 30px;
-  padding-left: 30px;
   width: 100%;
+  max-width: 1200px;
+  padding: 30px 0 0 30px;
   box-sizing: border-box
 }
 
 .botao-voltar {
-  position: absolute;
-  top: 30px;
-  left: 30px;
   background-color: gray ;  /* #ff4655;  Vermelho Valorant */
   color: white;
   border: none;
@@ -240,6 +238,7 @@ h1, h2 {
   border-radius: 4px;
   transition: background-color 0.4s ease, transform 0.4s ease;
   text-decoration: none;
+  display: inline-block;
 }
 .botao-voltar:hover {
   background-color: #b3323c;
@@ -247,4 +246,23 @@ h1, h2 {
 }
 .botao-voltar:active{
   transform: scale(0.95);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -75px;
+}
+
+@media (max-width: 768px) {
+  .topo-pagina {
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  main {
+    margin-top: 0;
+  }
 }
