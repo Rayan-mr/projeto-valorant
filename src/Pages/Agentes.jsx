@@ -36,13 +36,16 @@ function Agentes() {
 
   return (
     <div className="container-da-pagina">
-       <Link to={caminhoVoltar} className="botao-voltar">
-        ← Voltar para a lista
-      </Link>
-      
-      <h1>{agente.nome}</h1>
-      <p>Função: {agente.funcao}</p>
-      <img src={imagemResolvida} alt={agente.nome} width="300" />
+      <div className="topo-pagina">
+         <Link to={caminhoVoltar} className="botao-voltar">
+         ← Voltar para a lista
+        </Link>
+      </div>
+      <main>
+        <h1>{agente.nome}</h1>
+        <p>Função: {agente.funcao}</p>
+        <img src={imagemResolvida} alt={agente.nome} width="300" />
+      </main>
     </div>
   );
 }

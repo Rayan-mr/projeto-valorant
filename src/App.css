@@ -211,11 +211,20 @@ h1, h2 {
 }
 
 .container-da-pagina{
-  position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  padding-top: 80px;
+  box-sizing: border-box
 }
 
+.topo-pagina {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 100%;
+  box-sizing: border-box
+}
 
 .botao-voltar {
   position: absolute;
