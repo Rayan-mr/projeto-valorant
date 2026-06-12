@@ -192,7 +192,7 @@
 }
 
 .btn {
-  background-color: #ff4655;
+  background-color: #e62332;
   color: white;
   border: none;
   margin: 10px;
@@ -204,7 +204,7 @@
 }
 
 .btn:hover {
-  background-color: #d93644;
+  background-color: #bd1422;
   transform: scale(1.05);
 }
 

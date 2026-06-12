@@ -23,11 +23,13 @@ function Agentes() {
   if (!agente) {
     return (
     <>
-     <h1>Agente não encontrado</h1>;
-     {/* <button onClick={handleVoltar} className="botao-voltar">Voltar</button> */}
-     <Link to="/projeto-valorant" className="botao-voltar">
+    <main>
+      <h1>Agente não encontrado</h1>;
+        {/* <button onClick={handleVoltar} className="botao-voltar">Voltar</button> */}
+        <Link to="/projeto-valorant" className="botao-voltar" aria-label="Voltar para a lista de agentes">
           Voltar
         </Link>
+    </main>
     </>
   );}
 
@@ -37,14 +39,14 @@ function Agentes() {
   return (
     <div className="container-da-pagina">
       <div className="topo-pagina">
-         <Link to={caminhoVoltar} className="botao-voltar">
+         <Link to={caminhoVoltar} className="botao-voltar" aria-label="Voltar para a lista de agentes">
          ← Voltar para a lista
         </Link>
       </div>
       <main>
         <h1>{agente.nome}</h1>
         <p>Função: {agente.funcao}</p>
-        <img src={imagemResolvida} alt={agente.nome} width="300" />
+        <img src={imagemResolvida} alt={`Ilustração do agente ${agente.nome}`} width="300" />
       </main>
     </div>
   );

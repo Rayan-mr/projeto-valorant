@@ -49,6 +49,7 @@ function Home (){
 
   return (
     <>
+    <main>
       <h1>Agentes Valorant</h1>
 
       <h2>Quantidade: {agentesFiltrados.length}</h2>
@@ -69,7 +70,7 @@ function Home (){
 
             return (
               <AgentesCards
-                key={index}
+                key={agente.id}
                 nome={agente.nome}
                 id={agente.id}
                 funcao={agente.funcao}
@@ -79,6 +80,7 @@ function Home (){
           })
         }
       </section>
+      </main>
     </>
   )
 }
