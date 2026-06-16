@@ -55,11 +55,15 @@ function Home (){
       <h2>Quantidade: {agentesFiltrados.length}</h2>
 
       <div>
-        <button className="btn" onClick={() => setFuncaoSelecionada("Todos")}>Todos</button>
-        <button className="btn" onClick={() => setFuncaoSelecionada("Duelista")}>Duelistas</button>
-        <button className="btn" onClick={() => setFuncaoSelecionada("Controlador")}>Controladores</button>
-        <button className="btn" onClick={() => setFuncaoSelecionada("Sentinela")}>Sentinelas</button>
-        <button className="btn" onClick={() => setFuncaoSelecionada("Iniciador")}>Iniciadores</button>
+        <button className="btn" aria-label="Mostrar todos os personagens" onClick={() => setFuncaoSelecionada("Todos")}>Todos</button>
+
+        <button className="btn" aria-label="Filtrar por duelista" onClick={() => setFuncaoSelecionada("Duelista")}>Duelistas</button>
+
+        <button className="btn" aria-label="Filtrar por controladores" onClick={() => setFuncaoSelecionada("Controlador")}>Controladores</button>
+
+        <button className="btn" aria-label="Filtrar por sentinelas" onClick={() => setFuncaoSelecionada("Sentinela")}>Sentinelas</button>
+
+        <button className="btn" aria-label="Filtrar por iniciadores" onClick={() => setFuncaoSelecionada("Iniciador")}>Iniciadores</button>
       </div>
 
       <section id="center">
