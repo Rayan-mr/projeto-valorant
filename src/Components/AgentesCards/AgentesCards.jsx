@@ -9,7 +9,7 @@ const textoAlternativo = nome
 
 
 
-    const registrarClick = (destino) =>{
+const registrarClick = (destino) =>{
       console.log('Evento de clique enviado, destino:', destino)
 
       window.dataLayer.push({
@@ -20,7 +20,7 @@ const textoAlternativo = nome
 
   return (
     <div className="card">
-      <Link to={`/projeto-valorant/${id}`} onClick={() => resgitrarClick(nome)}>
+      <Link to={`/projeto-valorant/${id}`} onClick={() => registrarClick(nome)}>
         <img src={imagem} alt={textoAlternativo} />
       
 
